@@ -14,7 +14,7 @@ export class SluzbaOdrzavanja {
     @OneToOne(type => SluzbaZaInventar, inventar => inventar.sluzba)
     inventar: SluzbaZaInventar;
 	
-	@OneToMany(type => Zaposleni, zaposleni => zaposleni.sluzba)
+    @OneToMany(type => Zaposleni, zaposleni => zaposleni.sluzba)
     zaposleni: Zaposleni[];
 	
 }
