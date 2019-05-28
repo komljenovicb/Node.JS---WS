@@ -1,4 +1,4 @@
-import {Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany } from "typeorm";
 import { Zaposleni } from "./Zaposleni";
 import { Restoran } from "./Restoran";
 import { StavkaIzvestaja } from "./StavkaIzvestaja";
