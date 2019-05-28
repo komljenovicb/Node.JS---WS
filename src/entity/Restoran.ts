@@ -10,7 +10,7 @@ export class Restoran {
     @Column()
     nazivRestorana: string;
 
-	@OneToMany(type => IzvestajOBrojuDorucaka, izvestaj => izvestaj.restoran)
+    @OneToMany(type => IzvestajOBrojuDorucaka, izvestaj => izvestaj.restoran)
     izvestaji: IzvestajOBrojuDorucaka[];
 
 }
