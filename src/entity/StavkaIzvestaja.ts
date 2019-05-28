@@ -1,4 +1,4 @@
-import {Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
 import { IzvestajOBrojuDorucaka } from "./IzvestajOBrojuDorucaka";
 
 @Entity()
@@ -10,13 +10,13 @@ export class StavkaIzvestaja {
     @Column()
     datum: Date;
 	
-	@Column()
+    @Column()
     dan: string;
 	
-	@Column()
+    @Column()
     brojDorucaka: number;
 
-	@ManyToOne(type => IzvestajOBrojuDorucaka, izvestaj => izvestaj.stavkeIzvestaja, { eager:true })
-	izvestaj: IzvestajOBrojuDorucaka;
+    @ManyToOne(type => IzvestajOBrojuDorucaka, izvestaj => izvestaj.stavkeIzvestaja, { eager:true })
+    izvestaj: IzvestajOBrojuDorucaka;
 	
 }
