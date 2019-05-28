@@ -6,11 +6,11 @@ import { StavkaIzvestaja } from "./StavkaIzvestaja";
 @Entity()
 export class IzvestajOBrojuDorucaka {
 
-    @PrimaryGeneratedColumn()
-    rbrIzvestaja: number;
+    	@PrimaryGeneratedColumn()
+    	rbrIzvestaja: number;
 
-    @Column()
-    datumOd: Date;
+    	@Column()
+    	datumOd: Date;
 	
 	@Column()
 	datumDo: Date;
@@ -22,12 +22,12 @@ export class IzvestajOBrojuDorucaka {
 	status: string;
 	
 	@ManyToOne(type => Zaposleni, zaposleni => zaposleni.izvestaji, {eager: true})
-    zaposleni: Zaposleni;
+    	zaposleni: Zaposleni;
 	
 	@ManyToOne(type => Restoran, restoran => restoran.izvestaji, {eager: true})
-    restoran: Restoran;
+    	restoran: Restoran;
 	
 	@OneToMany(type => StavkaIzvestaja, stavkeIzvestaja => stavkeIzvestaja.izvestaj)
-    stavkeIzvestaja: StavkaIzvestaja[];
+    	stavkeIzvestaja: StavkaIzvestaja[];
 	
 }
