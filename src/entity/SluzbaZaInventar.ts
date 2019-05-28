@@ -10,9 +10,9 @@ export class SluzbaZaInventar {
     sluzbaID: number;
 
     @Column()
-	naziv: string;
-	
-	@OneToOne(type => SluzbaZaInventar, inventar => inventar.sluzba)
+    naziv: string;
+
+    @OneToOne(type => SluzbaZaInventar, inventar => inventar.sluzba)
     sluzba: SluzbaOdrzavanja;
 	
 }
