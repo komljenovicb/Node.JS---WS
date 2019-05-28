@@ -1,4 +1,4 @@
-import {Entity, PrimaryGeneratedColumn, Column, JoinColumn, OneToOne } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, JoinColumn, OneToOne } from "typeorm";
 import { IzvestajOBrojuDorucaka } from "./IzvestajOBrojuDorucaka";
 import { SluzbaOdrzavanja } from "./SluzbaOdrzavanja";
 import { Zaduzenje } from "./Zaduzenje";
