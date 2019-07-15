@@ -19,9 +19,9 @@ createConnection().then(connection => {
 
     app.use("/usluga", UslugaRoutes);
     app.use("/jedinicamere", JedinicaMereRoutes);
-	app.use("/zaposleni", ZaposleniRoutes);
+    app.use("/zaposleni", ZaposleniRoutes);
     app.use("/restoran", RestoranRoutes);
-	app.use("/izvestaj", IzvestajOBrojuDorucakaRoutes);
+    app.use("/izvestaj", IzvestajOBrojuDorucakaRoutes);
     
     app.listen(5000, () => console.log("Listening on 5000..."));
 
